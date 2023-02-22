@@ -8,7 +8,6 @@ public class Weapon : MonoBehaviour
     public Entity Parent;
     public float FireRate;
     public float _cooldown;
-   
     public float FireVolume;
 
     public virtual void Fire()

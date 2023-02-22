@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Player : Entity
 {
-
+    public GameObject bulletPrefab;
 
     public PlayerController playerController;
     public float playerSpeed;
@@ -30,5 +30,9 @@ public class Player : Entity
         }
 
 
+    }
+   void Update()
+    {
+        Instantiate(bulletPrefab, transform.position, transform.rotation);
     }
 }
